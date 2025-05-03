@@ -4,16 +4,17 @@
     "": {
       "name": "pdf-to-png-worker",
       "dependencies": {
-        "@cf-wasm/png": "latest",
-        "@hyzyla/pdfium": "latest",
+        "@cf-wasm/png": "^0.1.24",
+        "@hyzyla/pdfium": "^2.1.6",
       },
       "devDependencies": {
-        "@cloudflare/workers-types": "latest",
-        "@types/bun": "latest",
-        "wrangler": "latest",
+        "@cloudflare/workers-types": "^4.20250503.0",
+        "@types/bun": "^1.2.11",
+        "@types/node": "^22.15.3",
+        "wrangler": "^4.14.1",
       },
       "peerDependencies": {
-        "typescript": "latest",
+        "typescript": "^5.8.3",
       },
     },
   },
