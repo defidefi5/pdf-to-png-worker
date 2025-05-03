@@ -1,0 +1,21 @@
+{
+  "name": "pdf-to-png-worker",
+  // "type": "javascript",
+  "compatibility_date": "2025-05-02",
+  "main": "src/index.ts",
+  // Your Cloudflare account
+  // "account_id": "<YOUR_ACCOUNT_ID>",
+
+  // Deploy to workers.dev (no custom route)
+  "workers_dev": true,
+
+  "r2_buckets": [
+    {
+      "binding": "R2",
+      "bucket_name": "temp-pdf-to-png-worker"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}

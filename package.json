@@ -1,0 +1,24 @@
+{
+  "name": "pdf-to-png-worker",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "type-check": "bun x tsc --noEmit",
+    "dev": "bun x wrangler dev",
+    "build": "bun x tsc --outDir dist",
+    "deploy": "bun x wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250503.0",
+    "@types/bun": "^1.2.11",
+    "wrangler": "^4.14.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@cf-wasm/png": "^0.1.24",
+    "@hyzyla/pdfium": "^2.1.6"
+  }
+}
